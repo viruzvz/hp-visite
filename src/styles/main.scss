@@ -1,0 +1,13 @@
+// vendors
+@import "bootstrap";
+@import "fontawesome";
+
+// components
+@import "components/variables";
+@import "components/hero";
+@import "components/cardbox";
+
+// default page styles
+body {
+  background-color:lightcyan;
+}

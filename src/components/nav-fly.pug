@@ -1,0 +1,10 @@
+.nav-fly 
+  mixin flag(src)
+    li 
+      a(href="#" title="flag")
+        img(src=src alt="flag")
+  .container
+    ul.nav-flyList
+      +flag("")
+      +flag("")
+      +flag("")
