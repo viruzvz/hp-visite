@@ -1,0 +1,22 @@
+.nav-fly {
+  background-color: rgba(59, 89, 152, 0.8);
+  z-index: 2;
+}
+
+.nav-flyList {
+  display: inline-flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  li {
+    list-style: none;
+  }
+  li:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+
+.nav-flyList--wrap {
+  display: flex;
+  justify-content: end;
+  padding: 5px 0;
+}

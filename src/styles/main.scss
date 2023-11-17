@@ -6,8 +6,11 @@
 @import "components/variables";
 @import "components/hero";
 @import "components/cardbox";
+@import "components/nav-fly";
+@import "components/sizes";
+@import "components/colors";
 
 // default page styles
 body {
-  background-color:lightcyan;
+  font-family: 'Montserrat', sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

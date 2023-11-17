@@ -4,7 +4,8 @@
       a(href="#" title="flag")
         img(src=src alt="flag")
   .container
-    ul.nav-flyList
-      +flag("")
-      +flag("")
-      +flag("")
+    .nav-flyList--wrap 
+      ul.nav-flyList
+        +flag("src/assets/flag-en.svg")
+        +flag("src/assets/flag-fr.svg")
+        +flag("src/assets/flag-uk.svg")

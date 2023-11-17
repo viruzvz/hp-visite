@@ -1,3 +1,6 @@
 @import "_cardbox.scss";
+@import "_colors.scss";
 @import "_hero.scss";
+@import "_nav-fly.scss";
+@import "_sizes.scss";
 @import "_variables.scss";
