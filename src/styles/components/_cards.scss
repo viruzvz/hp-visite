@@ -1,0 +1,14 @@
+.cards {
+  text-align: center;
+  img {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  .title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+    color: $c-tertiary;
+  }
+}

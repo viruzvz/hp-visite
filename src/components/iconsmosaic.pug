@@ -1,0 +1,19 @@
+mixin iconsmosaic(cardclass, path, title, text, button, id)
+  if button
+    .iconsmosaic-wrap.perfil(class=cardclass)
+      .imgbox
+        img.card-img(src=path, alt="")
+      .title
+        = title
+      img(src="assets/agendamento.svg", alt="Texto-Referente")
+      p 
+        = text
+      button.btn.btn-outline-primary.btn-sm.rounded-0(type="submit" data-bs-toggle='modal' data-bs-target=id) Saiba mais
+  else
+    a.iconsmosaic-wrap(class=cardclass, href="#")
+      .imgbox
+        img(src=path, alt="")
+      .title
+        = title
+      if block 
+        block

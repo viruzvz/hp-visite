@@ -1,0 +1,9 @@
+.divider {
+  display: flex;
+  height: 5px;
+  width: 100%;
+  justify-content: space-between;
+  span {
+    width: 100%;
+  }
+}

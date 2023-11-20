@@ -1,35 +1,24 @@
-.cardbox-flex {
+.iconsmosaic {
+  position: relative;
+}
+
+.iconsmosaic-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.cardbox-flexSwipe {
-  flex-wrap: nowrap;
-}
-
-.cardbox-absolute {
-  position: absolute;
-  top: -70px;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.cardbox.perfil {
-  .imgbox {
-    width: 100px;
-    height: 100px;
+  &:first-child {
+    .iconsmosaic-wrap {
+      padding-top: 80px;
+    }
   }
-  img {
-    max-width: 98px;
-  }
-  .title {
-    margin-bottom: 0;
+  &:last-child {
+    .iconsmosaic-wrap {
+      padding-bottom: 80px;
+    }
   }
 }
 
-.cardbox {
+.iconsmosaic-wrap {
   background-color: $c-secondary;
   flex: 0 1 24%;
   display: flex;
@@ -53,38 +42,32 @@
     justify-content: center;
   }
   img {
-    max-width: 41px;
+    max-width: 105px;
   }
   p {
     font-weight:lighter;
   }
 }
 
-.cardbox-nospace {
+.iconsmosaic-nospace {
   flex: 1;
 }
 
-.cardbox-saparate {
-  &:not(:last-child) {
-    border-bottom: 1px solid $white;
-  }
-}
-
-.cardbox-style {
+.iconsmosaic-style {
   margin: 0;
   background-color: transparent;
   flex: 1;
   &:not(:last-child) {
-    border-right: 1px solid $white;
+    border-right: 1px solid #ccc;
   }
   @include media-breakpoint-down(xl) {
     &:nth-child(1),
     &:nth-child(2) {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid #ccc;
     }
     &:nth-child(1),
     &:nth-child(3) {
-      border-right: 1px solid $white;
+      border-right: 1px solid #ccc;
     }
     &:nth-child(2),
     &:nth-child(4) {
@@ -101,12 +84,12 @@
       border-right: none;
     }
     &:not(:last-child) {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid #ccc;
     }
   }
 }
 
-.cardbox-style1 {
+.iconsmosaic-style1 {
   @include media-breakpoint-down(xl) {
     flex: 0 49%;
     margin: 1px 1px 5px 1px;
@@ -117,7 +100,7 @@
   }
 }
 
-.cardbox-style {
+.iconsmosaic-style {
   @include media-breakpoint-down(xl) {
     flex: 0 50%;
   }
@@ -126,8 +109,16 @@
   }
 }
 
-.cardbox-style2 {
+.iconsmosaic-style2 {
   background-color: white;
   border: 1px solid #ccc;
   min-width: 300px;
+}
+
+.iconsmosaic-divider {
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
 }
