@@ -3,11 +3,11 @@
 @import "fontawesome";
 
 // components
+@import "components/sizes";
 @import "components/variables";
 @import "components/hero";
 @import "components/iconsmosaic";
 @import "components/nav-fly";
-@import "components/sizes";
 @import "components/colors";
 @import "components/link";
 @import "components/divider";
@@ -17,6 +17,7 @@
 @import "components/accordion";
 @import "components/iplay";
 @import "components/grid";
+@import "components/banners";
 
 // default page styles
 body {

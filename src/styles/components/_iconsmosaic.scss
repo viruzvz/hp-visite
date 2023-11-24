@@ -30,7 +30,8 @@
 
   .title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: $-base;
+    text-transform: uppercase;
   }
 
   .imgbox {
@@ -80,7 +81,7 @@
 
 
 .iconsmosaic-divider {
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     border-bottom: 1px solid #ccc;
     position: absolute;
     left: 0;

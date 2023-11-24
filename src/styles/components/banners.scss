@@ -1,0 +1,10 @@
+.banners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banners-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
