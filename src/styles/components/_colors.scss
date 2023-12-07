@@ -10,6 +10,10 @@
   color: white;
 }
 
+.c-gray {
+  color: #555;
+}
+
 .b-white {
   background-color: white;
 }
@@ -20,4 +24,8 @@
 
 .b-secondary {
   background-color: $c-secondary;
+}
+
+.t-shadow {
+  text-shadow: $t-textshadow;
 }

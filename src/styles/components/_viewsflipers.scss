@@ -1,0 +1,24 @@
+.viewsflipers {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.viewsflipers-wrap {
+  display: flex;
+  position: relative;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.viewsimage, 
+.viewstext {
+  width: 100%;
+}
+
+.viewstext {
+  .caption {
+    padding: 1rem 2rem;
+  }
+}
