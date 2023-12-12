@@ -6,7 +6,6 @@
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
     margin: 0 auto;
     content: '';
     width: 4px;
@@ -25,10 +24,8 @@
   justify-content: center;
   position: absolute;
   top: 0;
-  bottom: 0;
   z-index: 2;
   left: 0;
-  right: 0;
   margin: auto;
   border: 4px solid #fff;
   .caption {
@@ -36,12 +33,28 @@
     color: white;
     font-size: $-lg;
   }
-  // &::after {
-  //   position: absolute;
-  //   content: '';
-  //   bottom: 0;
-  //   height: 100%;
-  //   width: 2px;
-  //   background-color: red
-  // }
+}
+
+.timewrapper {
+  z-index: 1;
+}
+
+@include media-breakpoint-up(lg) {
+  .timeshape {
+    right: 0;
+    bottom: 0;
+  }
+  .timeline {
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .timeline {
+    &::after {
+      left: 50px;
+    }
+  }
 }

@@ -3,12 +3,12 @@ mixin viewsflipers(src)
     .timeshape
       .caption 1987
     .timeline
-    .viewsimage.Embed.Embed--21by9
+    .viewsimage.Embed.Embed--21by9.Embed--responsive
       img.u-fitCover(src=src, alt="imagem aleatória")
     .viewstext
       .caption
         h3 Lorem ipsum 
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil? Beatae vero dolor obcaecati sint ut cumque! Veritatis expedita obcaecati quidem voluptatibus, facere eaque nostrum esse enim cupiditate est magni.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil? Beatae vero dolor obcaecati sint ut cumque! Veritatis expedita obcaecati quidem voluptatibus, facere eaque nostrum esse enim cupiditate est magni. orem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil? Beatae vero dolor obcaecati sint ut cumque! Veritatis expedita obcaecati quidem voluptatibus, facere eaque nostrum esse enim cupiditate est magni. orem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil? Beatae vero dolor obcaecati sint ut cumque! Veritatis expedita obcaecati quidem voluptatibus, facere eaque nostrum esse enim cupiditate est magni.
 
 
 section.readers
@@ -24,6 +24,11 @@ section.readers
   .container
     .boxoverflow.text-center.py-5
       img(src="src/assets/timeline-congresso.svg", alt="")
+    .controls
+      a.me-5.arrow-left.arrow
+        i.fa-solid.fa-chevron-left
+      a.ms-5.arrow-right.arrow
+        i.fa-solid.fa-chevron-right
   .viewsflipers
     +viewsflipers('https://unsplash.it/800/600?random&seed=0')
     +viewsflipers('https://unsplash.it/800/600?random&seed=1')

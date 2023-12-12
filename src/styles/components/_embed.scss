@@ -39,3 +39,9 @@
 .u-fitCover {
   object-fit: cover
 }
+
+@include media-breakpoint-down(lg) {
+  .Embed--responsive {
+    padding-bottom: 60%
+  }
+}
