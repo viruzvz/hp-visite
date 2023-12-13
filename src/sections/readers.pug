@@ -1,7 +1,8 @@
-mixin viewsflipers(src)
+mixin viewsflipers(caption, src)
   .viewsflipers-wrap
     .timeshape
-      .caption 1987
+      .caption
+        = caption
     .timeline
     .viewsimage.Embed.Embed--21by9.Embed--responsive
       img.u-fitCover(src=src, alt="imagem aleatória")
@@ -24,14 +25,17 @@ section.readers
   .container
     .boxoverflow.text-center.py-5
       img(src="src/assets/timeline-congresso.svg", alt="")
-    .controls
+    .controls.d-none
       a.me-5.arrow-left.arrow
         i.fa-solid.fa-chevron-left
       a.ms-5.arrow-right.arrow
         i.fa-solid.fa-chevron-right
   .viewsflipers
-    +viewsflipers('https://unsplash.it/800/600?random&seed=0')
-    +viewsflipers('https://unsplash.it/800/600?random&seed=1')
-    +viewsflipers('https://unsplash.it/800/600?random&seed=2')
-    +viewsflipers('https://unsplash.it/800/600?random&seed=3')
-    +viewsflipers('https://unsplash.it/800/600?random&seed=4')
+    +viewsflipers('1653','https://unsplash.it/800/600?random&seed=0')
+    +viewsflipers('1826','https://unsplash.it/800/600?random&seed=1')
+    +viewsflipers('1914','https://unsplash.it/800/600?random&seed=2')
+    +viewsflipers('1922','https://unsplash.it/800/600?random&seed=3')
+    +viewsflipers('1937','https://unsplash.it/800/600?random&seed=4')
+    +viewsflipers('1946','https://unsplash.it/800/600?random&seed=5')
+    +viewsflipers('1960','https://unsplash.it/800/600?random&seed=6')
+    +viewsflipers('HOJE','https://unsplash.it/800/600?random&seed=7')

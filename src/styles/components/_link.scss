@@ -84,12 +84,6 @@
   }
 }
 
-.active {
-  font-weight: bold;
-  border-bottom: 4px solid $c-secondary;
-  color: $c-primary;
-}
-
 .btn-primaryTheme {
   background-color: $c-primary;
   border-color: adjust-hue($c-primary, 5deg);

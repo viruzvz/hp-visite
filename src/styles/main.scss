@@ -1,6 +1,7 @@
 // vendors
 @import "bootstrap";
 @import "fontawesome";
+@import "open-props";
 
 // components
 @import "components/sizes";
@@ -21,6 +22,7 @@
 @import "components/boxoverflow";
 @import "components/viewsflipers";
 @import "components/timeline";
+@import "components/gallery";
 
 // default page styles
 body {
@@ -72,4 +74,15 @@ body {
 .socialnt {
   background-color: #F1F1F1;
   font-size: $-xl4;
+}
+
+.readers {
+  @include media-breakpoint-down(lg) {
+    .controls {
+      text-align: center;
+      padding: 15px 0;
+      margin-bottom: 30px;
+      display: block !important;
+    }
+  }
 }

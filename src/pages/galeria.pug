@@ -1,0 +1,47 @@
+extends /layouts/template.pug
+block main
+  .container
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='#') Home
+        li.breadcrumb-item.active(aria-current='page') Library
+    h1.c-tertiary.mb-4 Galeria - 
+      span Arte
+    .gallery
+      mixin image-gallery(src) 
+        li
+          img(src=src alt='Image title')
+          a(href=src).overlay
+            span Image title
+      ul.image-gallery
+        +image-gallery('https://unsplash.it/1400/1400?random&seed=0')
+        +image-gallery('https://unsplash.it/800/600?random&seed=1')
+        +image-gallery('https://unsplash.it/300/600?random&seed=2')
+        +image-gallery('https://unsplash.it/800/600?random&seed=3')
+        +image-gallery('https://unsplash.it/300/300?random&seed=4')
+        +image-gallery('https://unsplash.it/700/300?random&seed=5')
+        +image-gallery('https://unsplash.it/300/300?random&seed=6')
+        +image-gallery('https://unsplash.it/1500/1500?random&seed=7')
+        +image-gallery('https://unsplash.it/300/300?random&seed=8')
+        +image-gallery('https://unsplash.it/300/300?random&seed=9')
+        +image-gallery('https://unsplash.it/500/900?random&seed=10')
+        +image-gallery('https://unsplash.it/300/100?random&seed=11')
+        +image-gallery('https://unsplash.it/200/600?random&seed=12')
+        +image-gallery('https://unsplash.it/600/300?random&seed=13')
+
+
+    .gallery-footer 
+      nav(aria-label='...')
+        ul.pagination
+          li.page-item.disabled
+            a.page-link Voltar
+          li.page-item
+            a.page-link(href='#') 1
+          li.page-item.active(aria-current='page')
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') Próximo
+            
