@@ -1,5 +1,5 @@
 mixin viewsflipers(caption, src)
-  .viewsflipers-wrap
+  .viewsflipers-wrap(id=caption)
     .timeshape
       .caption
         = caption
@@ -23,19 +23,22 @@ section.readers
         p making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
   include /components/hero-mural.pug
   .container
-    .boxoverflow.text-center.py-5
-      img(src="src/assets/timeline-congresso.svg", alt="")
+    .boxoverflow.text-center.py-5(id="box-js")
+      include ../components/timeline.pug
+      //- img(src="src/assets/timeline-congresso.svg", alt="")
     .controls.d-none
-      a.me-5.arrow-left.arrow
+      a.me-5.arrow-left.arrow(id="slideLeft")
         i.fa-solid.fa-chevron-left
-      a.ms-5.arrow-right.arrow
+      a.ms-5.arrow-right.arrow(id="slideRight")
         i.fa-solid.fa-chevron-right
   .viewsflipers
     +viewsflipers('1653','https://unsplash.it/800/600?random&seed=0')
     +viewsflipers('1826','https://unsplash.it/800/600?random&seed=1')
     +viewsflipers('1914','https://unsplash.it/800/600?random&seed=2')
     +viewsflipers('1922','https://unsplash.it/800/600?random&seed=3')
-    +viewsflipers('1937','https://unsplash.it/800/600?random&seed=4')
-    +viewsflipers('1946','https://unsplash.it/800/600?random&seed=5')
-    +viewsflipers('1960','https://unsplash.it/800/600?random&seed=6')
-    +viewsflipers('HOJE','https://unsplash.it/800/600?random&seed=7')
+    +viewsflipers('1925','https://unsplash.it/800/600?random&seed=4')
+    +viewsflipers('1926','https://unsplash.it/800/600?random&seed=5')
+    +viewsflipers('1937','https://unsplash.it/800/600?random&seed=6')
+    +viewsflipers('1946','https://unsplash.it/800/600?random&seed=7')
+    +viewsflipers('1960','https://unsplash.it/800/600?random&seed=8')
+    +viewsflipers('HOJE','https://unsplash.it/800/600?random&seed=9')

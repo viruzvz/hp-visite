@@ -1,7 +1,6 @@
 // vendors
 @import "bootstrap";
 @import "fontawesome";
-@import "open-props";
 
 // components
 @import "components/sizes";
@@ -77,12 +76,19 @@ body {
 }
 
 .readers {
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     .controls {
       text-align: center;
       padding: 15px 0;
       margin-bottom: 30px;
       display: block !important;
     }
+  }
+}
+
+.svghover:hover {
+  rect {
+    transition: fill .4s ease;
+    fill: $c-tertiary;
   }
 }
